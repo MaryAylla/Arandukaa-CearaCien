@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}{{ planta.nome_popular }} - AranduKa'a{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="plant-detail-container">
+        <div class="plant-detail-header">
+            <h1 class="page-title">{{ planta.nome_popular }}</h1>
+            <h2 class="scientific-name">{{ planta.nome_cientifico }}</h2>
+        </div>
+
+        <img src="{{ url_for('static', filename='images/' + planta.imagem_principal) }}" alt="Imagem de {{ planta.nome_popular }}" class="plant-detail-image">
+
+        <div class="plant-info-columns">
+            <div class="ficha-tecnica">
+                <h3 class="section-title-small">Ficha Técnica</h3>
+                <p><strong>Família:</strong> {{ planta.ficha_tecnica.familia }}</p>
+                <p><strong>Importância Econômica:</strong> {{ planta.ficha_tecnica.importancia_economica }}</p>
+                <p><strong>Importância Alimentícia:</strong> {{ planta.ficha_tecnica.importancia_alimenticia }}</p>
+                <p><strong>Uso Medicinal Popular:</strong> {{ planta.ficha_tecnica.uso_medicinal_popular }}</p>
+            </div>
+            <div class="curiosidades">
+                <h3 class="section-title-small">Curiosidades</h3>
+                <p>{{ planta.curiosidades }}</p>
+            </div>
+        </div>
+
+        {% if planta.saber_popular and planta.saber_popular|length > 0 %}
+        <section class="saber-popular">
+            <h3 class="section-title-small">Saber Popular</h3>
+            <ul>
+                {% for relato in planta.saber_popular %}
+                <li class="relato-item">"{{ relato }}"</li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+
+        {% if planta.linha_do_tempo %}
+        <section class="linha-do-tempo">
+            <h3 class="section-title-small">Linha do Tempo Cultural</h3>
+            <p><strong>Uso Indígena:</strong> {{ planta.linha_do_tempo.indigena }}</p>
+            <p><strong>Uso no Sertão Colonial:</strong> {{ planta.linha_do_tempo.colonial }}</p>
+            <p><strong>Uso Atual:</strong> {{ planta.linha_do_tempo.atual }}</p>
+        </section>
+        {% endif %}
+        
+        <div class="disclaimer">
+            <strong>Aviso Legal:</strong> Esta informação é baseada no conhecimento tradicional e não substitui a orientação médica.
+        </div>
+    </div>
+</div>
+{% endblock %}

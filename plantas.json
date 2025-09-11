@@ -1,0 +1,401 @@
+[
+    {
+        "slug": "mandacaru",
+        "nome_popular": "Mandacaru",
+        "nome_cientifico": "Cereus jamacaru",
+        "imagem_principal": "mandacaru_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Cactaceae",
+            "importancia_economica": "Forragem animal em períodos de seca, uso em paisagismo e produção de frutos comestíveis.",
+            "importancia_alimenticia": "Frutos (cumbe) consumidos in natura, ricos em vitaminas.",
+            "uso_medicinal_popular": "O 'leite' do caule é usado na sabedoria popular para tratar problemas respiratórios, com cautela."
+        },
+        "curiosidades": "Sua flor branca, que só desabrocha à noite, é um dos maiores espetáculos da Caatinga e um símbolo de resistência.",
+        "saber_popular": ["Flor de mandacaru na noite é sinal de chuva no outro dia.", "Na seca, o mandacaru vira água e comida pro gado."],
+        "linha_do_tempo": {
+            "indigena": "Fonte de água e alimento em longas caminhadas.",
+            "colonial": "Usado como 'cerca viva' para delimitar terrenos.",
+            "atual": "Símbolo cultural do Nordeste e usado em forragens de emergência."
+        }
+    },
+    {
+        "slug": "juazeiro",
+        "nome_popular": "Juazeiro",
+        "nome_cientifico": "Ziziphus joazeiro",
+        "imagem_principal": "juazeiro_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Rhamnaceae",
+            "importancia_economica": "Produção de cosméticos (shampoos), alimentação animal e madeira para pequenas construções.",
+            "importancia_alimenticia": "Fruto (juá) rico em Vitamina C, consumido in natura ou em doces.",
+            "uso_medicinal_popular": "A casca é famosa por suas propriedades de limpeza (saponinas), usada para higiene bucal e combate à caspa."
+        },
+        "curiosidades": "É uma árvore perenifólia, ou seja, não perde suas folhas na estação seca, servindo como um oásis de sombra para animais e pessoas.",
+        "saber_popular": ["Raspas do juá no cabelo deixam ele forte e sem caspa.", "A sombra do juazeiro é o melhor descanso pro vaqueiro."],
+        "linha_do_tempo": {
+            "indigena": "A casca era usada para higiene e os frutos como alimento.",
+            "colonial": "Servia como ponto de referência e descanso para os vaqueiros.",
+            "atual": "Princípio ativo para a indústria de cosméticos e suplemento na ração animal."
+        }
+    },
+    {
+        "slug": "umbuzeiro",
+        "nome_popular": "Umbuzeiro",
+        "nome_cientifico": "Spondias tuberosa",
+        "imagem_principal": "umbuzeiro_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Anacardiaceae",
+            "importancia_economica": "Base para doces, geleias e a umbuzada, gerando renda para cooperativas do sertão.",
+            "importancia_alimenticia": "O umbu é um fruto suculento e agridoce, rico em vitamina C.",
+            "uso_medicinal_popular": "As raízes (xilopódios) armazenam água e são consumidas para matar a sede e como vermífugo."
+        },
+        "curiosidades": "Chamada de 'Árvore Sagrada do Sertão' por Euclides da Cunha, pode armazenar até 3.000 litros de água em suas raízes.",
+        "saber_popular": ["Na falta de água, a batata do umbuzeiro salva a vida.", "Doce de umbu é o azedinho mais gostoso que tem."],
+        "linha_do_tempo": {
+            "indigena": "Fonte vital de água e alimento na estiagem.",
+            "colonial": "Os frutos eram colhidos para fazer vinagre e bebidas fermentadas.",
+            "atual": "Símbolo da agricultura familiar e da bioeconomia da Caatinga."
+        }
+    },
+    {
+        "slug": "carnauba",
+        "nome_popular": "Carnaúba",
+        "nome_cientifico": "Copernicia prunifera",
+        "imagem_principal": "carnauba_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Arecaceae",
+            "importancia_economica": "Extração da cera de carnaúba, exportada mundialmente. As palhas são usadas em artesanato.",
+            "importancia_alimenticia": "Dos frutos se extrai um óleo e do caule um amido (sagu).",
+            "uso_medicinal_popular": "A raiz é utilizada em chás com propriedades diuréticas e anti-inflamatórias."
+        },
+        "curiosidades": "Conhecida como 'Árvore da Vida', pois tudo nela se aproveita. O Ceará é o maior produtor e exportador mundial de sua cera.",
+        "saber_popular": ["Da carnaúba, nada se perde. A palha vira bolsa, o pó vira cera e o talo vira cerca."],
+        "linha_do_tempo": {
+            "indigena": "As palhas eram usadas para cobrir ocas e fazer utensílios.",
+            "colonial": "A cera começou a ser explorada para fazer velas.",
+            "atual": "Matéria-prima nobre para as indústrias automobilística, farmacêutica e de cosméticos."
+        }
+    },
+    {
+        "slug": "aroeira",
+        "nome_popular": "Aroeira",
+        "nome_cientifico": "Myracrodruon urundeuva",
+        "imagem_principal": "aroeira_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Anacardiaceae",
+            "importancia_economica": "Madeira extremamente dura e resistente, usada em postes, cercas e construções de luxo.",
+            "importancia_alimenticia": "Não é utilizada para alimentação humana, pode ser tóxica.",
+            "uso_medicinal_popular": "A casca é um poderoso anti-inflamatório, cicatrizante e antisséptico, muito usada na saúde feminina."
+        },
+        "curiosidades": "Devido à exploração de sua madeira nobre, a aroeira está ameaçada de extinção em algumas regiões e seu corte é controlado.",
+        "saber_popular": ["Cerca de aroeira dura a vida toda, não acaba nunca.", "Banho de assento com a casca da aroeira é remédio certo."],
+        "linha_do_tempo": {
+            "indigena": "Reconhecida por suas propriedades para tratar feridas.",
+            "colonial": "Sua madeira foi fundamental para a construção de currais e dormentes de ferrovias.",
+            "atual": "Uso medicinal popular ainda é muito difundido e sua madeira tem alto valor."
+        }
+    },
+    {
+        "slug": "murici",
+        "nome_popular": "Murici",
+        "nome_cientifico": "Byrsonima verbascifolia",
+        "imagem_principal": "murici_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Malpighiaceae",
+            "importancia_economica": "Frutos comercializados para a produção de sucos, sorvetes, licores e doces.",
+            "importancia_alimenticia": "O fruto tem um sabor forte e exótico, rico em Vitamina C.",
+            "uso_medicinal_popular": "A casca da árvore é usada em chás para tratar febre, diarreia e inflamações."
+        },
+        "curiosidades": "O murici exala um odor muito forte e característico quando maduro, que pode ser sentido a metros de distância.",
+        "saber_popular": ["Sorvete de murici é um gosto que a gente nunca mais esquece.", "Quando a criança tá com diarreia, um chazinho da casca do murici resolve."],
+        "linha_do_tempo": {
+            "indigena": "Fruto consumido e casca usada como medicamento.",
+            "colonial": "Usado para fazer licores e doces artesanais.",
+            "atual": "Explorado pela indústria de polpas de frutas e sorvetes."
+        }
+    },
+    {
+        "slug": "cajueiro",
+        "nome_popular": "Cajueiro",
+        "nome_cientifico": "Anacardium occidentale",
+        "imagem_principal": "cajueiro_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Anacardiaceae",
+            "importancia_economica": "A castanha-de-caju tem alto valor no mercado mundial. O pedúnculo (caju) é usado para sucos e doces.",
+            "importancia_alimenticia": "Tanto a castanha (rica em gorduras boas) quanto o caju (rico em Vitamina C) são amplamente consumidos.",
+            "uso_medicinal_popular": "O chá das folhas e da casca é usado para tratar diabetes, diarreia e problemas de garganta."
+        },
+        "curiosidades": "O que chamamos de 'fruta' (o caju) é na verdade um pseudofruto. A fruta verdadeira é a castanha.",
+        "saber_popular": ["Cajuína é o suco de caju cozido, uma riqueza do nosso Ceará.", "A gente assava a castanha na fogueira, com cuidado com a fumaça."],
+        "linha_do_tempo": {
+            "indigena": "A castanha era fonte de alimento e o caju para sucos fermentados.",
+            "colonial": "A madeira foi utilizada para construção de barcos.",
+            "atual": "Motor da economia de várias cidades, com a castanha sendo produto de exportação."
+        }
+    },
+    {
+        "slug": "catanduva",
+        "nome_popular": "Catanduva",
+        "nome_cientifico": "Piptadenia moniliformis",
+        "imagem_principal": "catanduva_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Fabaceae",
+            "importancia_economica": "Madeira de boa qualidade para lenha e carvão, além de ser usada em cercas.",
+            "importancia_alimenticia": "Não possui uso alimentício humano conhecido.",
+            "uso_medicinal_popular": "A casca é utilizada em infusões para tratar feridas e inflamações de pele devido à sua ação cicatrizante."
+        },
+        "curiosidades": "É uma planta pioneira, ou seja, uma das primeiras a nascer em áreas degradadas, ajudando a recuperar o solo.",
+        "saber_popular": ["Onde nasce catanduva, a terra tá se recuperando.", "O chá da casca é bom pra limpar arranhão de espinho."],
+        "linha_do_tempo": {
+            "indigena": "Provavelmente usada para fins medicinais e como lenha.",
+            "colonial": "Material essencial para mourões de cerca e lenha para os engenhos.",
+            "atual": "Importante na recuperação de áreas degradadas da Caatinga e como fonte de energia (carvão)."
+        }
+    },
+    {
+        "slug": "catingueira",
+        "nome_popular": "Catingueira",
+        "nome_cientifico": "Caesalpinia pyramidalis Tul.",
+        "imagem_principal": "catingueira_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Fabaceae",
+            "importancia_economica": "Fornece madeira para lenha, carvão e estacas. Suas flores são importantes para a apicultura (produção de mel).",
+            "importancia_alimenticia": "Forragem para caprinos e ovinos durante a estiagem.",
+            "uso_medicinal_popular": "A casca é usada em chás para tratar diarreia e problemas intestinais."
+        },
+        "curiosidades": "A catingueira perde todas as suas folhas na estação seca, mas é uma das primeiras a florescer intensamente de amarelo logo antes das primeiras chuvas.",
+        "saber_popular": ["Quando a catingueira flora, é sinal que a chuva tá perto.", "As cabras adoram comer a folha da catingueira."],
+        "linha_do_tempo": {
+            "indigena": "Usada como lenha e suas flores como indicador de mudança de estação.",
+            "colonial": "Principal fonte de madeira para cercas e energia.",
+            "atual": "Essencial para a apicultura na Caatinga e como forragem animal."
+        }
+    },
+    {
+        "slug": "copaiba",
+        "nome_popular": "Copaíba",
+        "nome_cientifico": "Copaifera langsdorffii Desf.",
+        "imagem_principal": "copaiba_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Fabaceae",
+            "importancia_economica": "O óleo-resina extraído do tronco tem alto valor comercial na indústria de cosméticos e farmacêutica.",
+            "importancia_alimenticia": "Não possui uso alimentício.",
+            "uso_medicinal_popular": "O óleo de copaíba é um dos anti-inflamatórios e cicatrizantes mais famosos da medicina popular brasileira."
+        },
+        "curiosidades": "O óleo não vem da casca ou das folhas, mas é extraído diretamente do interior do tronco, perfurando-o com um trado.",
+        "saber_popular": ["Uma gota de óleo de copaíba em um machucado ajuda a cicatrizar rapidinho.", "É o antibiótico da mata."],
+        "linha_do_tempo": {
+            "indigena": "Conhecido como o 'óleo milagroso', usado para curar feridas de guerra.",
+            "colonial": "Passou a ser comercializado como um remédio valioso nas boticas.",
+            "atual": "Princípio ativo em inúmeros produtos farmacêuticos e cosméticos modernos."
+        }
+    },
+    {
+        "slug": "espinheiro",
+        "nome_popular": "Espinheiro",
+        "nome_cientifico": "Acacia glomerosa Benth.",
+        "imagem_principal": "espinheiro_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Fabaceae",
+            "importancia_economica": "Excelente para cercas-vivas de contenção devido aos seus espinhos longos e fortes.",
+            "importancia_alimenticia": "Não possui uso alimentício.",
+            "uso_medicinal_popular": "A casca é usada em gargarejos para inflamações de garganta."
+        },
+        "curiosidades": "Seus espinhos são tão eficazes que formam barreiras quase impenetráveis, sendo uma cerca natural perfeita.",
+        "saber_popular": ["Pra fazer uma cerca que nem bicho passa, é só plantar espinheiro.", "O chá da casca é bom pra garganta arranhada."],
+        "linha_do_tempo": {
+            "indigena": "Usado como barreira de proteção para aldeias.",
+            "colonial": "Fundamental para a criação de gado, formando cercas naturais para os currais.",
+            "atual": "Ainda usado como cerca-viva em propriedades rurais."
+        }
+    },
+    {
+        "slug": "faveira",
+        "nome_popular": "Faveira",
+        "nome_cientifico": "Parkia platycephala Benth.",
+        "imagem_principal": "faveira_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Fabaceae",
+            "importancia_economica": "Fornece sombra para o gado e sua madeira é leve, usada em caixotaria.",
+            "importancia_alimenticia": "As sementes (favas) podem ser consumidas cozidas, mas não é um uso muito difundido.",
+            "uso_medicinal_popular": "A casca é usada em chás para o tratamento de asma e bronquite."
+        },
+        "curiosidades": "Suas inflorescências parecem pompons vermelhos pendurados, atraindo morcegos, que são seus principais polinizadores.",
+        "saber_popular": ["A sombra da faveira é a melhor que tem pro descanso do gado.", "A flor parece um pincel de pintura."],
+        "linha_do_tempo": {
+            "indigena": "Sementes usadas como alimento de subsistência.",
+            "colonial": "Árvore valorizada pela sombra nos pastos.",
+            "atual": "Importante para a pecuária extensiva na Caatinga e para a fauna local."
+        }
+    },
+    {
+        "slug": "jatoba",
+        "nome_popular": "Jatobá",
+        "nome_cientifico": "Hymenaea courbaril L.",
+        "imagem_principal": "jatoba_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Fabaceae",
+            "importancia_economica": "Madeira de alta qualidade para construção. A resina (jutaicica) é usada para vernizes e incensos.",
+            "importancia_alimenticia": "A polpa do fruto, seca e farinácea, é nutritiva e consumida como farinha.",
+            "uso_medicinal_popular": "A casca e a seiva são usadas em xaropes caseiros para problemas respiratórios."
+        },
+        "curiosidades": "O fruto tem um cheiro forte e característico, o que lhe rendeu o apelido popular de 'chulé de velho' em algumas regiões.",
+        "saber_popular": ["A farinha do jatobá com leite é vitamina forte.", "O chá da casca limpa o peito da tosse."],
+        "linha_do_tempo": {
+            "indigena": "A resina era usada como incenso e a polpa como alimento energético.",
+            "colonial": "A madeira foi muito usada na construção de igrejas e casarões.",
+            "atual": "Valorizado na culinária alternativa (PANC) e como fitoterápico."
+        }
+    },
+    {
+        "slug": "juca",
+        "nome_popular": "Jucá",
+        "nome_cientifico": "Caesalpinia ferrea",
+        "imagem_principal": "juca_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Fabaceae",
+            "importancia_economica": "Madeira extremamente densa e durável (Pau-Ferro), usada em construção de pontes e instrumentos musicais.",
+            "importancia_alimenticia": "Não possui uso alimentício.",
+            "uso_medicinal_popular": "A casca e as vagens são ricas em taninos, usadas em chás para diabetes, inflamações e cicatrização."
+        },
+        "curiosidades": "Também conhecida como Pau-Ferro, sua madeira é tão densa que não flutua na água.",
+        "saber_popular": ["Chá de jucá é amargo, mas é santo remédio.", "Uma estaca de jucá nunca mais acaba."],
+        "linha_do_tempo": {
+            "indigena": "Usado para fazer arcos resistentes e como remédio.",
+            "colonial": "Madeira nobre para vigas de construções importantes.",
+            "atual": "Muito usado em arborização urbana e como planta medicinal."
+        }
+    },
+    {
+        "slug": "mororo",
+        "nome_popular": "Mororó",
+        "nome_cientifico": "Bauhinia ungulata",
+        "imagem_principal": "mororo_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Fabaceae",
+            "importancia_economica": "As fibras de sua casca são usadas para fazer cordas e amarras resistentes.",
+            "importancia_alimenticia": "Não possui uso alimentício.",
+            "uso_medicinal_popular": "A casca e as folhas são usadas em chás para tratar diabetes e inflamações, especialmente da garganta."
+        },
+        "curiosidades": "Suas folhas têm um formato característico que lembra uma 'pata de vaca', comum a várias plantas do gênero Bauhinia.",
+        "saber_popular": ["Pra amarrar qualquer coisa, a casca de mororó é a melhor corda que tem.", "Gargarejo com o chá da casca cura dor de garganta."],
+        "linha_do_tempo": {
+            "indigena": "Fonte de fibras para amarras e construção de artefatos.",
+            "colonial": "Substituía cordas industrializadas na vida rural.",
+            "atual": "Estudado por suas propriedades medicinais, especialmente hipoglicemiantes."
+        }
+    },
+    {
+        "slug": "mulungu",
+        "nome_popular": "Mulungu",
+        "nome_cientifico": "Erythrina velutina",
+        "imagem_principal": "mulungu_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Fabaceae",
+            "importancia_economica": "Muito usada em paisagismo e arborização urbana devido à sua bela floração.",
+            "importancia_alimenticia": "Não possui uso alimentício, suas sementes são tóxicas.",
+            "uso_medicinal_popular": "A casca é um dos calmantes e sedativos naturais mais conhecidos na medicina popular, usada em chás para insônia e ansiedade."
+        },
+        "curiosidades": "Floresce com uma cor de coral intensa durante a estação seca, quando a árvore está sem folhas, criando um contraste vibrante na paisagem.",
+        "saber_popular": ["Pra quem tem nervo agitado, um chazinho de mulungu acalma na hora.", "A semente é bonita, mas não pode comer que é veneno."],
+        "linha_do_tempo": {
+            "indigena": "Usado em rituais e como calmante natural.",
+            "colonial": "Adotado nas boticas como um 'remédio para os nervos'.",
+            "atual": "Vendido em casas de produtos naturais e farmácias de manipulação como fitoterápico para ansiedade."
+        }
+    },
+    {
+        "slug": "mutamba",
+        "nome_popular": "Mutamba",
+        "nome_cientifico": "Guazuma ulmifolia",
+        "imagem_principal": "mutamba_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Malvaceae",
+            "importancia_economica": "Madeira leve usada para caixotaria e lenha. Frutos servem de alimento para a fauna.",
+            "importancia_alimenticia": "Os frutos, embora não muito saborosos, são consumidos por humanos em tempos de escassez.",
+            "uso_medicinal_popular": "O chá da casca é muito famoso para combater a queda de cabelo e a caspa, além de problemas gástricos."
+        },
+        "curiosidades": "Seus frutos são pequenos, pretos e verrugosos, parecendo cápsulas secas, e são muito procurados por pássaros.",
+        "saber_popular": ["Lavar o cabelo com o chá da casca da mutamba deixa ele forte e para de cair.", "É o remédio do cabelo."],
+        "linha_do_tempo": {
+            "indigena": "Usado para tratar problemas de pele e cabelo.",
+            "colonial": "Principal remédio popular para calvície e problemas do couro cabeludo.",
+            "atual": "Princípio ativo em muitos shampoos e tônicos capilares fitoterápicos."
+        }
+    },
+    {
+        "slug": "pajau",
+        "nome_popular": "Pajaú",
+        "nome_cientifico": "Triplaris gardneriana",
+        "imagem_principal": "pajau_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Polygonaceae",
+            "importancia_economica": "Madeira usada em construções rurais e como lenha. Atrai polinizadores.",
+            "importancia_alimenticia": "Não possui uso alimentício.",
+            "uso_medicinal_popular": "A casca é usada em chás para tratar febres e malária."
+        },
+        "curiosidades": "A árvore é dióica, ou seja, existem plantas 'macho' e 'fêmea'. As femininas produzem inflorescências avermelhadas e vistosas.",
+        "saber_popular": ["Essa árvore tem o macho e a fêmea, a gente conhece pela cor da flor.", "O chá amargo da casca corta a febre."],
+        "linha_do_tempo": {
+            "indigena": "Utilizada no tratamento de febres intermitentes.",
+            "colonial": "Conhecida como uma 'quina' do sertão, em alusão à planta usada contra a malária.",
+            "atual": "Estudada por suas propriedades antimaláricas e febrífugas."
+        }
+    },
+    {
+        "slug": "sabia",
+        "nome_popular": "Sabiá",
+        "nome_cientifico": "Mimosa caesalpiniifolia",
+        "imagem_principal": "sabia_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Fabaceae",
+            "importancia_economica": "Madeira de altíssima qualidade, densa e resistente, excelente para estacas, mourões e lenha de longa duração.",
+            "importancia_alimenticia": "Suas folhas servem como excelente forragem para o gado, mesmo na seca.",
+            "uso_medicinal_popular": "A casca é usada para fazer xaropes contra a tosse."
+        },
+        "curiosidades": "É uma planta de crescimento muito rápido e agressivo, sendo ótima para reflorestamento e formação de cercas-vivas.",
+        "saber_popular": ["Estaca de sabiá não acaba nunca no chão.", "É a melhor madeira pra fazer o curral."],
+        "linha_do_tempo": {
+            "indigena": "Fonte de madeira para lanças e outros artefatos.",
+            "colonial": "A madeira mais cobiçada para as cercas que delimitaram as grandes fazendas.",
+            "atual": "Essencial na agropecuária da Caatinga, tanto para cercas quanto para alimentação animal."
+        }
+    },
+    {
+        "slug": "sabonete",
+        "nome_popular": "Sabonete",
+        "nome_cientifico": "Sapindus saponaria",
+        "imagem_principal": "sabonete_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Sapindaceae",
+            "importancia_economica": "Os frutos são ricos em saponina, podendo ser usados para produzir sabão biodegradável.",
+            "importancia_alimenticia": "Os frutos são tóxicos e não devem ser consumidos.",
+            "uso_medicinal_popular": "O chá da casca é usado como diurético e para tratar problemas de pele."
+        },
+        "curiosidades": "Ao esfregar os frutos com um pouco de água, eles produzem uma espuma densa, como um sabão natural.",
+        "saber_popular": ["Antigamente, a gente lavava roupa com a frutinha dessa árvore.", "É o sabão que nasce no pé."],
+        "linha_do_tempo": {
+            "indigena": "Usado para lavar o corpo, os cabelos e para pescar (a saponina atordoa os peixes).",
+            "colonial": "Principal fonte de sabão nas áreas rurais antes dos produtos industrializados.",
+            "atual": "Estudado como fonte de saponinas para a indústria de cosméticos e produtos de limpeza ecológicos."
+        }
+    },
+    {
+        "slug": "tamboril",
+        "nome_popular": "Tamboril",
+        "nome_cientifico": "Enterolobium contortisiliquum",
+        "imagem_principal": "tamboril_principal.jpg",
+        "ficha_tecnica": {
+            "familia": "Fabaceae",
+            "importancia_economica": "Madeira leve usada para fabricar canoas de um tronco só, gamelas e caixotaria.",
+            "importancia_alimenticia": "Os frutos servem de alimento para o gado.",
+            "uso_medicinal_popular": "A casca é usada em chás para combater gripes e resfriados."
+        },
+        "curiosidades": "Seu fruto tem um formato circular e achatado que lembra uma orelha, por isso também é conhecida como 'Orelha-de-macaco' ou 'Orelha-de-negro'.",
+        "saber_popular": ["A canoa feita de tamboril é leve e boa de navegar.", "A vagem parece uma orelha seca."],
+        "linha_do_tempo": {
+            "indigena": "Troncos usados para fazer canoas e utensílios domésticos.",
+            "colonial": "Madeira usada para a produção de gamelas e cochos para animais.",
+            "atual": "Muito usada em projetos de reflorestamento e paisagismo devido ao seu crescimento rápido e copa grande."
+        }
+    }
+]

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}O Reconhecedor - AranduKa'a{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="content-card recognizer-section">
+        <h1 class="page-title">O Reconhecedor de Plantas</h1>
+        <p class="section-description">Para melhores resultados, envie uma foto nítida da folha, flor ou fruto.</p>
+        
+        <form action="{{ url_for('identificar') }}" method="post" enctype="multipart/form-data" id="form-reconhecedor">
+            
+            <div id="upload-area">
+                <label for="imagem" class="upload-label">
+                    <span id="file-name-display">Clique para enviar um arquivo</span>
+                    <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                </label>
+                <input type="file" name="imagem" id="imagem" accept="image/*">
+            </div>
+
+            <p class="separator-text">ou</p>
+
+            <button type="button" id="btn-abrir-camera" class="cta-button secondary">
+                <i class="fas fa-camera"></i> Usar a Câmera
+            </button>
+
+            <div id="camera-area" class="hidden">
+                <video id="camera-view" autoplay playsinline></video>
+                <button type="button" id="btn-capturar" class="cta-button">Tirar Foto</button>
+                <canvas id="canvas-captura" class="hidden"></canvas>
+            </div>
+            
+            <button type="submit" id="btn-enviar" class="cta-button hidden">Identificar Planta</button>
+
+        </form>
+    </div>
+</div>
+{% endblock %}

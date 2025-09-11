@@ -1,0 +1,8 @@
+# Ambiente Virtual
+venv/
+
+# Pasta de uploads temporários
+uploads/
+
+# Arquivos de cache do Python
+__pycache__/

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}AranduKa'a{% endblock %}</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="{{ url_for('home') }}" class="logo">AranduKa'a</a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="{{ url_for('home') }}">Início</a>
+                <a href="{{ url_for('reconhecedor') }}">O Reconhecedor</a>
+                <a href="{{ url_for('enciclopedia') }}">Enciclopédia</a>
+                <a href="{{ url_for('sobre') }}">Sobre o Projeto</a>
+                <a href="{{ url_for('impacto') }}">Impacto</a>
+            </nav>
+
+            <button class="hamburger" id="hamburger-btn" aria-label="Abrir menu">
+                <i class="fas fa-bars icon-open"></i>
+                <i class="fas fa-xmark icon-close"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AranduKa'a | Projeto para o Ceará Científico.</p>
+    </footer>
+
+    {% block scripts %}
+    {# O script de navegação carrega em todas as páginas #}
+    <script src="{{ url_for('static', filename='js/nav.js') }}"></script>
+
+    {# O script da câmera SÓ carrega na página 'reconhecedor' #}
+    {% if request.endpoint == 'reconhecedor' %}
+    <script src="{{ url_for('static', filename='js/camera.js') }}"></script>
+    {% endif %}
+    {% endblock %}
+</body>
+
+</html>

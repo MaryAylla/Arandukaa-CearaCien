@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}AranduKa'a: A Sabedoria da Caatinga{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content-left">
+        <h1>AranduKa'a: A Sabedoria da Caatinga na Palma da Sua Mão</h1>
+        <p>Um site para identificar, conhecer e preservar a flora da Caatinga cearense com o poder da Inteligência Artificial.</p>
+        <a href="{{ url_for('reconhecedor') }}" class="cta-button">
+            <i class="fas fa-leaf"></i> Identifique uma Planta Agora!
+        </a>
+    </div>
+    <div class="hero-image-right">
+        </div>
+</section>
+
+<section class="features">
+    <div class="container grid-container"> {# Adicionado grid-container aqui #}
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-camera"></i></div>
+            <h3>IDENTIFIQUE</h3>
+            <p>Use sua câmera ou envie uma foto para descobrir qual planta da Caatinga você encontrou.</p>
+        </div>
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-book-open"></i></div>
+            <h3>APRENDA</h3>
+            <p>Explore nossa enciclopédia interativa e conheça os usos, a história e a importância de cada espécie.</p>
+        </div>
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-seedling"></i></div>
+            <h3>PRESERVE</h3>
+            <p>Entenda por que a conservação da Caatinga é vital e como nosso projeto contribui para isso.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

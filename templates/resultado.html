@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Resultado da Identificação - AranduKa'a{% endblock %}
+
+{% block content %}
+<div class="container text-container"> {# Usando o container de texto para um alinhamento melhor #}
+    {% if planta %}
+        <div class="content-card result-card"> {# Usando a classe content-card para padronizar #}
+            <img src="{{ url_for('static', filename='images/' + planta.imagem_principal) }}" alt="Imagem de {{ planta.nome_popular }}" class="result-image">
+            <div class="result-details">
+                <h1 class="plant-name">{{ planta.nome_popular }}</h1>
+                <p class="scientific-name">{{ planta.nome_cientifico }}</p>
+                
+                {% if planta.confianca %}
+                    <div class="confidence-badge">
+                        Nossa IA tem <strong>{{ planta.confianca | round(1) }}%</strong> de certeza.
+                    </div>
+                {% endif %}
+                
+                <p class="description">
+                    {{ planta.curiosidades }}
+                </p>
+                <a href="{{ url_for('planta_detalhe', slug=planta.slug) }}" class="cta-button">
+                    <i class="fas fa-book"></i> Ver Detalhes Completos
+                </a>
+            </div>
+        </div>
+    {% else %}
+        <div class="content-card no-result">
+            <h1 class="page-title">Planta Não Identificada</h1>
+            <p>Não foi possível identificar a planta com a imagem fornecida. Por favor, tente novamente com uma imagem mais clara e em boas condições.</p>
+            <a href="{{ url_for('reconhecedor') }}" class="cta-button secondary">Tentar Novamente</a>
+        </div>
+    {% endif %}
+
+    <div class="back-link-container">
+        <a href="{{ url_for('reconhecedor') }}" class="back-link">&larr; Voltar para o Reconhecedor</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Enciclopédia da Caatinga - AranduKa'a{% endblock %}
+
+{% block content %}
+<div class="encyclopedia-header">
+    <h1 class="page-title">Enciclopédia da Caatinga</h1>
+    <p class="section-description">Explore a riqueza da flora do nosso bioma. Clique em uma planta para saber mais.</p>
+</div>
+
+<div class="encyclopedia-grid container grid-container">
+    {% for planta in plantas %}
+    <a href="{{ url_for('planta_detalhe', slug=planta.slug) }}" class="plant-card">
+        <img src="{{ url_for('static', filename='images/' + planta.imagem_principal) }}" alt="Foto de {{ planta.nome_popular }}">
+        <div class="card-content">
+            <h3>{{ planta.nome_popular }}</h3>
+            <p>{{ planta.nome_cientifico }}</p>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}
