@@ -1,7 +1,8 @@
+
 from flask import Flask, render_template, request, redirect, url_for
 import os
 import json
-from tflite_runtime.interpreter import Interpreter
+from tensorflow.keras.models import load_model
 from PIL import Image, ImageOps
 import numpy as np
 from werkzeug.utils import secure_filename
@@ -13,15 +14,11 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 UPLOAD_FOLDER = os.path.join(BASE_DIR, 'uploads')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-MODEL_PATH = os.path.join(BASE_DIR, 'ia_model', 'model.tflite')
-LABELS_PATH = os.path.join(BASE_DIR, 'ia_model', 'labels.txt')
+MODEL_PATH = os.path.join(BASE_DIR, 'ia-models', 'keras_model.h5')
+LABELS_PATH = os.path.join(BASE_DIR, 'ia-models', 'labels.txt')
 PLANTAS_JSON_PATH = os.path.join(BASE_DIR, 'plantas.json')
 
-interpreter = Interpreter(model_path=MODEL_PATH)
-interpreter.allocate_tensors()
-input_details = interpreter.get_input_details()
-output_details = interpreter.get_output_details()
-
+model = load_model(MODEL_PATH, compile=False)
 with open(LABELS_PATH, 'r', encoding='utf-8') as f:
     class_names = [line.strip() for line in f.readlines()]
 
@@ -30,27 +27,22 @@ def carregar_dados_plantas():
         return json.load(f)
 
 def identificar_planta(caminho_imagem):
+    np.set_printoptions(suppress=True)
+    data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
     image = Image.open(caminho_imagem).convert('RGB')
-    size = (input_details[0]['shape'][1], input_details[0]['shape'][2])
+    size = (224, 224)
     image = ImageOps.fit(image, size, Image.Resampling.LANCZOS)
-    
     image_array = np.asarray(image)
     normalized_image_array = (image_array.astype(np.float32) / 127.5) - 1
-    data = np.expand_dims(normalized_image_array, axis=0)
-
-    interpreter.set_tensor(input_details[0]['index'], data)
-    interpreter.invoke()
+    data[0] = normalized_image_array
     
-    prediction = interpreter.get_tensor(output_details[0]['index'])
-    confidence_scores = prediction[0]
+    prediction = model.predict(data, verbose=0)
     
-    index = np.argmax(confidence_scores)
+    index = np.argmax(prediction)
     class_name = class_names[index]
-    confidence_score = confidence_scores[index]
-    
+    confidence_score = prediction[0][index]
     nome_planta = class_name.split(' ', 1)[1]
     predicted_slug = unidecode(nome_planta).lower().replace(" ", "-")
-    
     return {"slug": predicted_slug, "confianca": confidence_score * 100}
 
 @app.route('/')
@@ -63,15 +55,16 @@ def reconhecedor():
 
 @app.route('/identificar', methods=['POST'])
 def identificar():
-    if 'imagem' not in request.files: return redirect(url_for('reconhecedor'))
+    if 'imagem' not in request.files:
+        return redirect(url_for('reconhecedor'))
     arquivo = request.files['imagem']
-    if arquivo.filename == '': return redirect(url_for('reconhecedor'))
-    
+    if arquivo.filename == '':
+        return redirect(url_for('reconhecedor'))
     if arquivo:
         filename = secure_filename(arquivo.filename)
         caminho_salvo = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         arquivo.save(caminho_salvo)
-        resultado_final = None
+        resultado_final = None # Inicializa como None
         try:
             predicao_ia = identificar_planta(caminho_salvo)
             plantas_db = carregar_dados_plantas()
@@ -80,8 +73,9 @@ def identificar():
                 resultado_final['confianca'] = predicao_ia['confianca']
         finally:
             os.remove(caminho_salvo)
-            
+        
         return render_template('resultado.html', planta=resultado_final, confidence=resultado_final.get('confianca') if resultado_final else None)
+
 
 @app.route('/enciclopedia')
 def enciclopedia():

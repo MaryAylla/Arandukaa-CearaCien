@@ -7,13 +7,13 @@
 6 Cajueiro
 7 Catanduva
 8 Catingueira
-9 Copaíba
+9 Copaiba
 10 Espinheiro
 11 Faveira
 12 Jatoba
 13 Juca
 14 Mororo
-15 Mutungu
+15 Mulungu
 16 Mutamba
 17 Pajau
 18 Sabia
