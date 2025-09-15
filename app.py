@@ -9,6 +9,7 @@ from werkzeug.utils import secure_filename
 from unidecode import unidecode
 
 app = Flask(__name__)
+app.config['FREEZER_RELATIVE_URLS'] = True 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 UPLOAD_FOLDER = os.path.join(BASE_DIR, 'uploads')
@@ -49,11 +50,11 @@ def identificar_planta(caminho_imagem):
 def home():
     return render_template('index.html')
 
-@app.route('/reconhecedor')
+@app.route('/reconhecedor/')
 def reconhecedor():
     return render_template('reconhecedor.html')
 
-@app.route('/identificar', methods=['POST'])
+@app.route('/identificar/', methods=['POST'])
 def identificar():
     if 'imagem' not in request.files:
         return redirect(url_for('reconhecedor'))
@@ -64,7 +65,7 @@ def identificar():
         filename = secure_filename(arquivo.filename)
         caminho_salvo = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         arquivo.save(caminho_salvo)
-        resultado_final = None # Inicializa como None
+        resultado_final = None
         try:
             predicao_ia = identificar_planta(caminho_salvo)
             plantas_db = carregar_dados_plantas()
@@ -77,7 +78,7 @@ def identificar():
         return render_template('resultado.html', planta=resultado_final, confidence=resultado_final.get('confianca') if resultado_final else None)
 
 
-@app.route('/enciclopedia')
+@app.route('/enciclopedia/')
 def enciclopedia():
     plantas = carregar_dados_plantas()
     return render_template('enciclopedia.html', plantas=plantas)
@@ -91,11 +92,11 @@ def planta_detalhe(slug):
     else:
         return "Planta não encontrada", 404
 
-@app.route('/sobre')
+@app.route('/sobre/')
 def sobre():
     return render_template('sobre.html')
 
-@app.route('/impacto')
+@app.route('/impacto/')
 def impacto():
     return render_template('impacto.html')
 
